@@ -8,6 +8,8 @@
 import Dispatch
 import Cocoa
 
+// ref: https://github.com/nielsmouthaan/ejectify-macos/blob/main/ejectify/Model/ExternalVolume.swift
+
 class Volume {
 
     let disk: DADisk
@@ -18,6 +20,11 @@ class Volume {
     let icon: NSImage
     
     init?(url: URL) {
+        let isExternalVolume = url.pathComponents.count > 1 && url.pathComponents[1] == "Volumes"
+        if !isExternalVolume {
+            return nil
+        }
+        
         guard let session = DASessionCreate(kCFAllocatorDefault) else {
             return nil
         }
