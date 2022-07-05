@@ -1,0 +1,66 @@
+
+
+"about_ejectia" = "About Ejectia";
+
+
+"check_for_updates" = "Check for Updates...";
+
+
+"check_for_updates_automatically" = "Check for updates automatically";
+
+
+"disk_num" = "Disk %d";
+
+
+"display_only_when_external_volumeIs_connected" = "Display only when external volume is connected";
+
+
+"eject_all_volumes" = "Eject All Volumes";
+
+
+"eject_num_volumes" = "Eject %d Volumes";
+
+
+"failed_to_eject_vol" = "Failed to eject \"%@\"";
+
+
+"general" = "General";
+
+
+"launch_at_login" = "Launch at Login";
+
+
+"menu_bar" = "Menu Bar";
+
+
+"no_external_volume_connected" = "No external volume connected";
+
+
+"notification" = "Notification";
+
+
+"preferences" = "Preferences...";
+
+
+"quit_ejectia" = "Quit Ejectia";
+
+
+"safely_removed" = "The device can now be safely removed.";
+
+
+"show_control_strip_button" = "Show Eject Button on Control Strip";
+
+
+"show_eject_all_volumes_button" = "Show \"Eject All Volumes\" Button";
+
+
+"show_eject_all_volumes_in_disk_buttons" = "Show \"Eject All Volumes in Disk\" Buttons";
+
+
+"touch_bar" = "Touch Bar";
+
+
+"updates" = "Updates";
+
+
+"vol_was_successfully_ejected" = "\"%@\" was successfully ejected";
