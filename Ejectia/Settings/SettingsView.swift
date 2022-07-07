@@ -37,7 +37,17 @@ struct SettingsView: View {
 
                 }
         }
-        .frame(width: 500, height: 200)
+        .frame(width: 500, height: .none)
+    }
+    
+    private func relaunch() {
+        let url = URL(fileURLWithPath: Bundle.main.resourcePath!)
+        let path = url.deletingLastPathComponent().deletingLastPathComponent().absoluteString
+        let task = Process()
+        task.launchPath = "/usr/bin/open"
+        task.arguments = [path]
+        task.launch()
+        exit(0)
     }
 }
 

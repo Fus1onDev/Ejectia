@@ -9,24 +9,20 @@ import SwiftUI
 import Defaults
 
 struct UpdateView: View {
-    @Default(.automaticallyChecksForUpdates) var automaticallyChecksForUpdates
     @StateObject var updaterViewModel = UpdaterViewModel()
     
     var body: some View {
         Form {
             HStack {
-                Toggle(isOn: $automaticallyChecksForUpdates) {
-                    Text(L10n.checkForUpdatesAutomatically)
-                }
-                    .toggleStyle(.checkbox)
+                Defaults.Toggle(L10n.checkForUpdatesAutomatically, key: .automaticallyChecksForUpdates)
+                    .onChange {
+                        updaterViewModel.automaticallyCheckForUpdates = $0
+                    }
                 Spacer()
                 CheckForUpdatesView(updaterViewModel: updaterViewModel)
             }
         }
         .padding(20)
-        .onChange(of: automaticallyChecksForUpdates) { value in
-           updaterViewModel.automaticallyCheckForUpdates = value
-        }
     }
 }
 

@@ -42,26 +42,15 @@ class AppDelegate: NSObject, NSApplicationDelegate {
         }
         
         createMenu()
-        setObservers()
+        setMenuBarObservers()
+        setTouchBarObservers()
         reload()
     }
     
     @objc func reload() {
         getVolumes()
         setMenu()
-        setupTouchBar(isPresent: !units.isEmpty)
-    }
     
-    private func setObservers() {
-        NSWorkspace.shared.notificationCenter.removeObserver(self)
-        
-        let notifications: [NSNotification.Name] = [
-            NSWorkspace.didMountNotification,
-            NSWorkspace.didUnmountNotification
-        ]
-        
-        for notification in notifications {
-            NSWorkspace.shared.notificationCenter.addObserver(self, selector: #selector(reload), name: notification, object: nil)
-        }
+        setupTouchBar()
     }
 }

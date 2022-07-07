@@ -9,19 +9,10 @@ import SwiftUI
 import Defaults
 
 struct TouchBarView: View {
-    @Default(.showControlStripButton) var showControlStripButton
-    @Default(.displayOnlyWhenExternalVolumeIsConnected) var displayOnlyWhenExternalVolumeIsConnected
-    
     var body: some View {
         Form {
-            Toggle(isOn: $showControlStripButton) {
-                Text(L10n.showControlStripButton)
-            }
-                .toggleStyle(.checkbox)
-            Toggle(isOn: $displayOnlyWhenExternalVolumeIsConnected) {
-                Text(L10n.displayOnlyWhenExternalVolumeIsConnected)
-            }
-                .toggleStyle(.checkbox)
+            Defaults.Toggle(L10n.showControlStripButton, key: .showControlStripButton)
+            Defaults.Toggle(L10n.displayOnlyWhenExternalVolumeIsConnected, key: .displayOnlyWhenExternalVolumeIsConnected)
         }
         .padding(20)
     }

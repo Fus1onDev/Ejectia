@@ -6,10 +6,13 @@
 //
 
 import Cocoa
+import Defaults
 import SFSafeSymbols
 
 extension AppDelegate {
-    func setupTouchBar(isPresent: Bool) {
+    func setupTouchBar() {
+        let isPresent = !(Defaults[.displayOnlyWhenExternalVolumeIsConnected] && units.isEmpty) && Defaults[.showControlStripButton]
+        
         DFRSystemModalShowsCloseBoxWhenFrontMost(isPresent)
         let touchBarIdentifier = NSTouchBarItem.Identifier(rawValue: "dev.fus1on.ejectia.touchbar")
         if touchBarItem == nil {

@@ -9,19 +9,11 @@ import SwiftUI
 import Defaults
 
 struct MenuBarView: View {
-    @Default(.showEjectAllVolumesButton) var showEjectAllVolumesButton
-    @Default(.showEjectAllVolumesInDiskButtons) var showEjectAllVolumesInDiskButtons
     
     var body: some View {
         Form {
-            Toggle(isOn: $showEjectAllVolumesButton) {
-                Text(L10n.showEjectAllVolumesButton)
-            }
-                .toggleStyle(.checkbox)
-            Toggle(isOn: $showEjectAllVolumesInDiskButtons) {
-                Text(L10n.showEjectAllVolumesInDiskButtons)
-            }
-                .toggleStyle(.checkbox)
+            Defaults.Toggle(L10n.showEjectAllVolumesButton, key: .showEjectAllVolumesButton)
+            Defaults.Toggle(L10n.showEjectAllVolumesInDiskButtons, key: .showEjectAllVolumesInDiskButtons)
         }
         .padding(20)
     }

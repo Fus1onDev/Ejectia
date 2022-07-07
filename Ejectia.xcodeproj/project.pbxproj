@@ -15,6 +15,7 @@
 		D659700A287470A1006B95D3 /* Unique.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6597009287470A1006B95D3 /* Unique.swift */; };
 		D659700D287471C3006B95D3 /* MenuBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = D659700C287471C3006B95D3 /* MenuBar.swift */; };
 		D659700F2874843D006B95D3 /* Commands.swift in Sources */ = {isa = PBXBuildFile; fileRef = D659700E2874843D006B95D3 /* Commands.swift */; };
+		D65970112875BC28006B95D3 /* Observers.swift in Sources */ = {isa = PBXBuildFile; fileRef = D65970102875BC28006B95D3 /* Observers.swift */; };
 		D673E884286C9517007D196B /* Defaults in Frameworks */ = {isa = PBXBuildFile; productRef = D673E883286C9517007D196B /* Defaults */; };
 		D673E886286C953A007D196B /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = D673E885286C953A007D196B /* Defaults.swift */; };
 		D6C03DB1287136B500766DEA /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6C03DB0287136B500766DEA /* Strings.swift */; };
@@ -80,6 +81,7 @@
 		D6597009287470A1006B95D3 /* Unique.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Unique.swift; sourceTree = "<group>"; };
 		D659700C287471C3006B95D3 /* MenuBar.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBar.swift; sourceTree = "<group>"; };
 		D659700E2874843D006B95D3 /* Commands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Commands.swift; sourceTree = "<group>"; };
+		D65970102875BC28006B95D3 /* Observers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observers.swift; sourceTree = "<group>"; };
 		D673E885286C953A007D196B /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
 		D6C03DB0287136B500766DEA /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
 		D6C03DB22871385E00766DEA /* Assets.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
@@ -213,6 +215,7 @@
 				D6D425C02867EF4B002370E4 /* AppDelegate.swift */,
 				D6D425952867EEF4002370E4 /* EjectiaApp.swift */,
 				D659700E2874843D006B95D3 /* Commands.swift */,
+				D65970102875BC28006B95D3 /* Observers.swift */,
 				D60F17DE2872E16200F16073 /* Models */,
 				D659700B287471B4006B95D3 /* MenuBar */,
 				D6D477F82871A71000E69C5A /* TouchBar */,
@@ -469,6 +472,7 @@
 				D659700F2874843D006B95D3 /* Commands.swift in Sources */,
 				D659700728746E6F006B95D3 /* Alert.swift in Sources */,
 				D6D425D128682B02002370E4 /* GeneralView.swift in Sources */,
+				D65970112875BC28006B95D3 /* Observers.swift in Sources */,
 				D673E886286C953A007D196B /* Defaults.swift in Sources */,
 				D6C03DB1287136B500766DEA /* Strings.swift in Sources */,
 				D6D4780A2871D7CF00E69C5A /* UpdateView.swift in Sources */,

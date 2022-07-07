@@ -50,6 +50,7 @@ extension AppDelegate {
                 action: #selector(AppDelegate.ejectAll(_:)),
                 keyEquivalent: ""
             ))
+            menu.addItem(NSMenuItem.separator())
         }
     }
     
