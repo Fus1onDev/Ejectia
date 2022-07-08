@@ -3,6 +3,12 @@
 "about_ejectia" = "About Ejectia";
 
 
+"act_as_media_eject_key" = "Act as Media Eject Key";
+
+
+"action_when_button_is_pressed" = "Action when button is pressed";
+
+
 "check_for_updates" = "Check for Updates...";
 
 
@@ -21,6 +27,9 @@
 "eject_num_volumes" = "Eject %d Volumes";
 
 
+"enable_notifications" = "Enable Notifications";
+
+
 "failed_to_eject_vol" = "Failed to eject \"%@\"";
 
 
@@ -36,7 +45,13 @@
 "no_external_volume_connected" = "No external volume connected";
 
 
-"notification" = "Notification";
+"notifications" = "Notifications";
+
+
+"notifications_are_not_allowed" = "Notifications are not allowed, please change the setting in your Mac preferences.";
+
+
+"open_preferences" = "Open Preferences...";
 
 
 "preferences" = "Preferences...";

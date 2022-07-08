@@ -12,6 +12,10 @@ import Foundation
 internal enum L10n {
   /// About Ejectia
   internal static let aboutEjectia = L10n.tr("Localizable", "about_ejectia")
+  /// Act as Media Eject Key
+  internal static let actAsMediaEjectKey = L10n.tr("Localizable", "act_as_media_eject_key")
+  /// Action when button is pressed
+  internal static let actionWhenButtonIsPressed = L10n.tr("Localizable", "action_when_button_is_pressed")
   /// Check for Updates...
   internal static let checkForUpdates = L10n.tr("Localizable", "check_for_updates")
   /// Check for updates automatically
@@ -28,6 +32,8 @@ internal enum L10n {
   internal static func ejectNumVolumes(_ p1: Int) -> String {
     return L10n.tr("Localizable", "eject_num_volumes", p1)
   }
+  /// Enable Notifications
+  internal static let enableNotifications = L10n.tr("Localizable", "enable_notifications")
   /// Failed to eject "%@"
   internal static func failedToEjectVol(_ p1: Any) -> String {
     return L10n.tr("Localizable", "failed_to_eject_vol", String(describing: p1))
@@ -40,8 +46,12 @@ internal enum L10n {
   internal static let menuBar = L10n.tr("Localizable", "menu_bar")
   /// No external volume connected
   internal static let noExternalVolumeConnected = L10n.tr("Localizable", "no_external_volume_connected")
-  /// Notification
-  internal static let notification = L10n.tr("Localizable", "notification")
+  /// Notifications
+  internal static let notifications = L10n.tr("Localizable", "notifications")
+  /// Notifications are not allowed, please change the setting in your Mac preferences.
+  internal static let notificationsAreNotAllowed = L10n.tr("Localizable", "notifications_are_not_allowed")
+  /// Open Preferences...
+  internal static let openPreferences = L10n.tr("Localizable", "open_preferences")
   /// Preferences...
   internal static let preferences = L10n.tr("Localizable", "preferences")
   /// Quit Ejectia

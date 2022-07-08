@@ -38,14 +38,14 @@ extension AppDelegate {
     
     private func ejectAndAlert(_ volume: Volume) {
         volume.eject(force: false, action: {
-            self.userNotificationCenter.alert(
+            self.alert(
                 title: L10n.volWasSuccessfullyEjected(volume.name),
                 body: L10n.safelyRemoved,
                 sound: .default,
                 identifier: volume.id
             )
         }, errorAction: { description in
-            self.userNotificationCenter.alert(
+            self.alert(
                 title: L10n.failedToEjectVol(volume.name),
                 body: description,
                 sound: .defaultCritical,

@@ -24,24 +24,19 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     var touchBarItem: NSCustomTouchBarItem?
     
     func applicationDidFinishLaunching(_ notification: Notification) {
-        NSApp.windows.forEach { $0.close() }
         
         // For debug
         // Defaults[.isFirstLaunch] = true
         
         if Defaults[.isFirstLaunch] {
             // Request permissions
-            userNotificationCenter.requestAuthorization(options: [.alert, .sound]) { authorized, _ in
-                guard authorized else {
-                    // print("Not authorized")
-                    return
-                }
-            }
+            requestNotificationAuth()
             
             Defaults[.isFirstLaunch] = false
         }
         
         createMenu()
+        setVolumeObservers()
         setMenuBarObservers()
         setTouchBarObservers()
         reload()
@@ -50,7 +45,6 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @objc func reload() {
         getVolumes()
         setMenu()
-    
         setupTouchBar()
     }
 }

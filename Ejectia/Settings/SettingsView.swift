@@ -27,11 +27,11 @@ struct SettingsView: View {
                         Label(L10n.touchBar, systemSymbol: .rectangle)
                     }
                 }
-            NotificationView()
+            NotificationsView()
                 .tabItem {
-                    Label(L10n.notification, systemSymbol: .bell)
+                    Label(L10n.notifications, systemSymbol: .bell)
                 }
-            UpdateView()
+            UpdatesView()
                 .tabItem {
                     Label(L10n.updates, systemSymbol: .arrowDownCircle)
 

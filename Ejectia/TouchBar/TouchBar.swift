@@ -32,8 +32,14 @@ extension AppDelegate {
     }
     
     @objc private func touchBarAction() {
-        ejectAll()
-        // HIDPostMediaKey(NX_KEYTYPE_EJECT)
+        switch Defaults[.controlStripButtonAction] {
+        case .ejectAll:
+            ejectAll()
+            return
+        case .actAsMediaEjectKey:
+            HIDPostMediaKey(NX_KEYTYPE_EJECT)
+            return
+        }
     }
     
     private func HIDPostMediaKey(_ key: Int32) {
